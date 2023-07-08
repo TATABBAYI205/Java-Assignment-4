@@ -1,0 +1,14 @@
+Lambda Parameters :-
+===================
+-> No, it is not mandatory for a lambda expression to have parameters. Lambda expressions can be written without any parameters when the behavior they represent does not require any input.
+
+Ex:-
+
+Runnable runnable = () -> {
+    System.out.println("This is a lambda expression without parameters.");
+    // Additional code here...
+}
+
+-> In the example above, the lambda expression () -> { ... } does not take any parameters. It represents a Runnable functional interface, which has a single abstract method run(). The lambda expression defines the behavior to be executed when the run() method is called.
+
+-> Lambda expressions without parameters are useful in situations where you want to express behavior that does not depend on any specific input. They provide a concise way to define and pass such behavior as a method argument or assign it to a functional interface variable.

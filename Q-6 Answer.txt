@@ -1,0 +1,27 @@
+Lamda Expression in java8:-
+==========================
+In Java 8, lambda expressions were introduced as a new language feature. A lambda expression is an anonymous function that allows you to define and pass behavior as a method argument or return it as a value without the need to create a separate class or write an explicit anonymous inner class.
+
+The syntax of a lambda expression consists of three main components:
+
+Parameter list: It represents the input parameters of the lambda expression. The parameter list can be empty or contain one or more parameters, separated by commas. For example, (int a, int b) or (String name).
+
+Arrow token: It is represented by the arrow symbol -> and separates the parameter list from the body of the lambda expression.
+
+Body: It represents the code or behavior of the lambda expression. It can be a single expression or a block of statements enclosed in curly braces {}. For example, a + b or { System.out.println(name); }.
+
+Ex:-
+
+() -> System.out.println("Hello, World!")
+
+
+(int a, int b) -> a + b
+
+
+(String name) -> {
+    System.out.println("Hello, " + name);
+    System.out.println("Welcome to Java 8!");
+    return name.length();
+}
+
+Lambda expressions are primarily used in conjunction with functional interfaces. A functional interface is an interface that has a single abstract method. Lambda expressions provide a concise way to implement the abstract method of a functional interface.

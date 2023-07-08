@@ -1,0 +1,13 @@
+Benefits of Lambda Expression:-
+=============================
+-> Concise and expressive syntax: Lambda expressions provide a more compact and readable syntax compared to traditional anonymous inner classes. They allow you to express behavior in a more concise and focused manner, reducing boilerplate code and improving code readability.
+
+-> Functional programming capabilities: Lambda expressions enable functional programming paradigms in Java. They allow you to treat behavior as a first-class citizen, facilitating the use of higher-order functions, function composition, and other functional programming concepts.
+
+-> Improved code flexibility: Lambda expressions allow you to write code that is more flexible and adaptable. You can easily define behavior as method arguments, making it simpler to pass behavior between methods and define custom behavior dynamically.
+
+-> Enhanced APIs: The introduction of functional interfaces and lambda expressions in Java 8 has led to the creation of new APIs that take advantage of these features. The java.util.function package provides a collection of functional interfaces that can be used with lambda expressions, making it easier to work with collections, streams, predicates, and more.
+
+-> Performance improvements: Lambda expressions can lead to performance improvements in certain scenarios. They provide opportunities for the compiler to optimize code and enable more efficient execution, such as by leveraging parallel execution with streams.
+
+-> Readability and maintainability: By expressing behavior directly in the context where it is used, lambda expressions improve code readability and maintainability. They eliminate the need for writing separate classes or cluttering the code with anonymous inner classes, making the code more focused and easier to understand.

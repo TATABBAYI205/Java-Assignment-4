@@ -1,0 +1,28 @@
+Functional Interface:-
+=====================
+In Java 8, a functional interface is an interface that declares exactly one abstract method. Functional interfaces serve as the basis for lambda expressions and method references, allowing functional programming concepts to be used in Java.
+
+The @FunctionalInterface annotation is used to indicate that an interface is intended to be a functional interface. Although the annotation itself is not mandatory for an interface to be considered functional, it helps to enforce the single abstract method constraint and provides additional compile-time checks.
+
+Functional interfaces can have default methods or static methods, as long as they do not override the Object class methods equals(), hashCode(), or toString(). The presence of these default or static methods does not affect the functional nature of the interface.
+
+Java 8 introduced several new functional interfaces in the java.util.function package to provide common function types. Some of the commonly used functional interfaces include:
+
+Supplier<T>: Represents a supplier of results, does not take any input and produces a result of type T.
+Consumer<T>: Represents an operation that takes an input of type T and returns no result.
+Predicate<T>: Represents a predicate (boolean-valued function) that takes an input of type T and returns a boolean result.
+Function<T, R>: Represents a function that takes an input of type T and produces a result of type R.
+
+Ex:-
+
+import java.util.function.Predicate;
+
+public class Main {
+    public static void main(String[] args) {
+        Predicate<Integer> isEven = num -> num % 2 == 0;
+        System.out.println(isEven.test(4)); 
+        System.out.println(isEven.test(5)); 
+    }
+}
+
+In the example above, we create a Predicate<Integer> functional interface using a lambda expression. The lambda expression checks if a given number is even by performing the modulo operation and comparing it to zero. We then use the test() method of the Predicate interface to check whether the provided numbers are even or odd.
